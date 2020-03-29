@@ -9,8 +9,11 @@ const Loading = props => {
     <Overlay
       isVisible={isVisible}
       windowBackgroundColor="rgba(0,0,0,.5)"
-      overlayBackgroundColor="transparent"
+      overlayBackgroundColor="red"
       overlayStyle={styles.overlay}
+      width="auto"
+      height="auto"
+      fullScreen={true}
     >
       <View style={styles.view}>
         <ActivityIndicator size="large" color="#00a680" />
@@ -24,11 +27,11 @@ export default Loading;
 
 const styles = StyleSheet.create({
   overlay: {
-    height: 100,
-    width: 200,
+    height: "auto",
+    width: "auto",
     backgroundColor: "#fff",
     borderColor: "#00a680",
-    borderWidth: 2,
+    borderWidth: 20,
     borderRadius: 10
   },
   view: {
