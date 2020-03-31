@@ -11,9 +11,6 @@ const Loading = props => {
       windowBackgroundColor="rgba(0,0,0,.5)"
       overlayBackgroundColor="red"
       overlayStyle={styles.overlay}
-      width="auto"
-      height="auto"
-      fullScreen={true}
     >
       <View style={styles.view}>
         <ActivityIndicator size="large" color="#00a680" />
